@@ -37,5 +37,8 @@
     "gulp-uglify": "^3.0.2",
     "gulp.spritesmith": "^6.12.1",
     "sass": "^1.49.9"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3"
   }
 }
