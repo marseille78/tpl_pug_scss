@@ -1,1 +1,1 @@
-# Template *Pug + SCSS* 
+# Template *Pug + SCSS*

@@ -4,7 +4,7 @@ module.exports = () => {
   const libCSS = [
     // 'node_modules/bootstrap/dist/css/bootstrap-grid.css',
     // 'node_modules/select2/dist/css/select2.css'
-    'node_modules/swiper/swiper-bundle.css'
+    // 'node_modules/swiper/swiper-bundle.css'
   ];
 
   // Load Libraries
