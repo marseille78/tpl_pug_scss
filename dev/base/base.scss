@@ -1,0 +1,35 @@
+/* base */
+// @media (min-width: $xs) { /* base $xs */ }
+// @media (min-width: $sm) { /* base $sm */ }
+// @media (min-width: $md) { /* base $md */ }
+@media (min-width: $lg) { /* base $lg */ }
+@media (min-width: $xl) { /* base $xl */ }
+// @media (min-width: $xxl) { /* base $xxl */ }
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $c_bgBody;
+    font-family: $ff_base;
+    font-size: $fz_base;
+    line-height: $lh;
+    color: $c_text;
+    overflow-x: hidden;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1450px;
+    // max-width: 360px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+// .page {}

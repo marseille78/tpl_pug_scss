@@ -9,10 +9,9 @@
 @mixin fontFace($font, $path, $weight: normal, $style: normal) {
     @font-face {
         font-family: quote($font);
-        src:
-            url(#{$path}.woff) format("woff"),
-            url(#{$path}.woff2) format("woff2"),
-            url(#{$path}.ttf) format("ttf");
+        src: url(#{$path}.woff) format("woff"),
+        url(#{$path}.woff2) format("woff2"),
+        url(#{$path}.ttf) format("ttf");
         font-weight: $weight;
         font-style: $style;
     }

@@ -1,0 +1,29 @@
+// COLORS
+$c_bgBody: #fff;
+$c_text: #202225;
+$c_brand: #ffe151;
+$c_link: tomato;
+// $c_accent: #F95109;
+
+// Font-family
+$ff_base: 'Roboto', sans-serif;
+$fz_base: 16px;
+$lh: 1.3;
+
+// Brakepoints
+$xs: "480px";
+$sm: "576px";
+$md: "768px";
+$lg: "992px";
+$xl: "1200px";
+$xxl: "1400px";
+
+// Other
+$anim: ease-in-out 300ms;
+
+// Placeholders
+%clearList {
+    list-style: none;
+    padding: 0;
+    margin-left: 0;
+}
