@@ -1,4 +1,4 @@
-# tpl_pug_scss_2
+# tpl_pug_scss
 
 ## Структура проекта
 
