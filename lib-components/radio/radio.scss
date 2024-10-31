@@ -1,0 +1,62 @@
+/* .radio */
+// @media (min-width: $xs) { /* .radio $xs */ }
+// @media (min-width: $sm) { /* .radio $sm */ }
+// @media (min-width: $md) { /* .radio $md */ }
+// @media (min-width: $lg) { /* .radio $lg */ }
+// @media (min-width: $xl) { /* .radio $xl */ }
+// @media (min-width: $xxl) { /* .radio $xxl */ }
+
+.radio {
+    &__label {
+        cursor: pointer;
+    }
+    &__input {
+        // Приховуємо реальну радіо-кнопку
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        margin: -1px;
+    }
+    &__custom {
+        position: relative;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background-color: #fff;
+        border: 2px solid #7edbbd;
+        border-radius: 50%;
+        margin-right: 8px;
+        vertical-align: text-top;
+
+        &::before {
+            content: "";
+            // Малюємо коло
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background-color: #1647ed;
+            border-radius: 50%;
+
+            // Вирівнюємо по центру
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            
+            // display: none;
+
+            transition: transform 300ms ease-in-out;
+        }
+        
+        .radio__input:checked + &::before {
+            // display: block;
+            transform: translate(-50%, -50%) scale(1);
+        }
+    }
+}

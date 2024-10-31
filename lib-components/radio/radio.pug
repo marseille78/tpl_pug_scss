@@ -1,0 +1,15 @@
+//- Виклик
+//- include ../components/radio/radio
+//- +radio({ name: "cat", text: "Заметки программиста", value: "coding-notes", checked: true })
+//- +radio({ name: "cat", text: "Заметки путешественника", value: "travel-notes" })
+
+mixin radio(data)
+    - const { name, value, text, checked } = data;
+
+    // START .radio
+    +b.DIV.radio
+        +e.LABEL.label
+            +e.INPUT.input(type="radio" name= name value= value checked= checked ? true : false)
+            +e.SPAN.custom
+            +e.SPAN.text #{text}
+    // END .radio
