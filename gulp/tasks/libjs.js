@@ -4,6 +4,9 @@ const libList = [
 
     /* rellax [Parallax]: npm i rellax -S */
     // 'node_modules/rellax/rellax.min.js',
+
+    /* Swiper */
+    "node_modules/swiper/swiper-bundle.min.js",
 ];
 
 const libjs = () => {

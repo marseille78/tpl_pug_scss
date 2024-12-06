@@ -1,6 +1,9 @@
 const libList = [
-    // npm i -D normalize.css
+    /* npm i -D normalize.css */
     'node_modules/normalize.css/normalize.css',
+
+    /* Swiper */
+    "node_modules/swiper/swiper-bundle.min.css",
 ];
 
 const libcss = () => {

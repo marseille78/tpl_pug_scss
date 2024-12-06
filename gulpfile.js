@@ -43,7 +43,7 @@ exports.default = $.gulp.series(
   task.clear,
   $.gulp.parallel(
     task.libcss,
-    // task.libjs,
+    task.libjs,
   ),
   $.gulp.parallel(task.pug, task.scss, task.js, task.img, task.fonts, task.icons),
   $.gulp.parallel(task.server, watcher)

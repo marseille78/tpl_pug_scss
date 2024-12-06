@@ -1,0 +1,41 @@
+/* .swiper */
+// @media (min-width: $xs) { /* .swiper $xs */ }
+// @media (min-width: $sm) { /* .swiper $sm */ }
+// @media (min-width: $md) { /* .swiper $md */ }
+// @media (min-width: $lg) { /* .swiper $lg */ }
+// @media (min-width: $xl) { /* .swiper $xl */ }
+// @media (min-width: $xxl) { /* .swiper $xxl */ }
+
+/* 
+Если swiper находится внутри flex-элемента,
+то добавляем flex-элементту свойство
+min-width: 0;
+и принудительно обновляем страницу
+*/
+
+.swiper {
+    padding: 30px 0 70px;
+    
+    &__content {
+        text-align: center;
+
+        img {
+            max-width: 100%;
+        }
+    }
+    &__button {
+        width: 42px;
+        height: 42px;
+        box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.12);
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+
+        &::after {
+            color: #000;
+            font-size: 12px;
+        }
+    }
+}

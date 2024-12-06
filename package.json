@@ -51,6 +51,7 @@
   "dependencies": {
     "jquery": "^3.6.3",
     "normalize.css": "^8.0.1",
-    "rellax": "^1.12.1"
+    "rellax": "^1.12.1",
+    "swiper": "^11.1.15"
   }
 }

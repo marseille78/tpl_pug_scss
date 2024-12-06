@@ -1,0 +1,31 @@
+mixin swiper(data)
+    // START .swiper
+    //- Главный контейнер слайдера
+    +b.DIV.swiper.swiper-container(data-swiper="true")
+        //- Обязательная оболочка
+        +e.DIV.wrapper.swiper-wrapper
+
+            //- Слайды
+            +e.DIV.slide.swiper-slide
+                //- Контент внутри слайда
+                +e.DIV.content
+                    img(src="https://loremflickr.com/1164/660/cat")
+            +e.DIV.slide.swiper-slide
+                //- Контент внутри слайда
+                +e.DIV.content
+                    img(src="https://loremflickr.com/1164/660/dog")
+            +e.DIV.slide.swiper-slide
+                //- Контент внутри слайда
+                +e.DIV.content
+                    img(src="https://loremflickr.com/1164/660/fox")
+
+        //- Добавляем, если нам нужны стрелки управления
+        +e.DIV.button--prev.swiper-button-prev(data-swiper-btn-prev="true")
+        +e.DIV.button--next.swiper-button-next(data-swiper-btn-next="true")
+
+        //- Добавляем, если нам нужна пагинация
+        +e.DIV.pagination.swiper-pagination
+
+        //- Добавляем, если нам нужна полоса прокрутки (scrollbar)
+        +e.DIV.scrollbar.swiper-scrollbar
+    // END .swiper
